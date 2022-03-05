@@ -1,4 +1,4 @@
 provider "google" {
-  project     = "cloud-cryptographic-wallet"
-  region      = "asia-northeast1"
+  project = "cloud-cryptographic-wallet"
+  region  = "asia-northeast1"
 }

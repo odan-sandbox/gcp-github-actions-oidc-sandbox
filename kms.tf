@@ -9,7 +9,7 @@ resource "google_kms_crypto_key" "secp256k1" {
   purpose  = "ASYMMETRIC_SIGN"
 
   version_template {
-    algorithm = "EC_SIGN_SECP256K1_SHA256"
+    algorithm        = "EC_SIGN_SECP256K1_SHA256"
     protection_level = "HSM"
   }
 
