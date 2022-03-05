@@ -1,4 +1,4 @@
 provider "google" {
-  project     = "aws-kms-provider"
+  project     = "cloud-cryptographic-wallet"
   region      = "asia-northeast1"
 }
