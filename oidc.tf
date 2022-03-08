@@ -6,7 +6,7 @@ resource "google_service_account" "this" {
 resource "google_project_iam_member" "this" {
   project = var.project_id
   role    = "roles/cloudkms.signerVerifier"
-  member  = "serviceAccount:${google_service_account.sa.email}"
+  member  = "serviceAccount:${google_service_account.this.email}"
 }
 
 module "gh_oidc" {
