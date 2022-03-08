@@ -18,7 +18,8 @@ module "gh_oidc" {
   provider_id = "oidc-sandbox-gh-provider"
   sa_mapping = {
     (google_service_account.this.account_id) = {
-      sa_name = google_service_account.this.name
+      sa_name   = google_service_account.this.name
+      attribute = "attribute.repository/odan-sandbox/gcp-github-actions-oidc-sandbox"
     }
   }
 }
