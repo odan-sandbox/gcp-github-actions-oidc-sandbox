@@ -19,6 +19,8 @@ jobs:
         workload_identity_provider: ${{ secrets.PROVIDER_NAME }}
         service_account: ${{ secrets.SA_EMAIL }}
       
+    - name: Setup tmate session
+      uses: mxschmitt/action-tmate@v3
     - name: Run gcloud
       run: gcloud kms keys versions get-public-key 1 --key secp256k1-key --keyring for-e2e-test --location global --output-file public-key.pub
 
