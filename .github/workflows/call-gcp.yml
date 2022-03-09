@@ -20,10 +20,7 @@ jobs:
         service_account: ${{ secrets.SA_EMAIL }}
       
     - name: Run gcloud
-      run: gcloud kms keys versions get-public-key 1 \
-            --key secp256k1-key \
-            --keyring for-e2e-test \
-            --location global \
-            --output-file public-key.pub
+      run: gcloud kms keys versions get-public-key 1 --key secp256k1-key --keyring for-e2e-test --location global --output-file public-key.pub
+
     - name: Show public-key.pub
       run: cat public-key.pub
