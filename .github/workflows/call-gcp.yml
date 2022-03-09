@@ -15,3 +15,6 @@ jobs:
       with:
         workload_identity_provider: ${{ secrets.PROVIDER_NAME }}
         service_account: ${{ secrets.SA_EMAIL }}
+      
+    - name: Run gcloud
+      run: gcloud kms keys describe --keyring=for-e2e-test
