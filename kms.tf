@@ -1,5 +1,5 @@
 resource "google_kms_key_ring" "this" {
-  name     = "for-e2e-test"
+  name     = "gcp-github-actions-oidc-sandbox"
   location = "global"
 }
 
