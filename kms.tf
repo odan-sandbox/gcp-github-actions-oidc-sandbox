@@ -1,3 +1,5 @@
+// https://github.com/odanado/terraform-gcp に移したから消す
+/*
 resource "google_kms_key_ring" "this" {
   name     = "gcp-github-actions-oidc-sandbox"
   location = "global"
@@ -13,3 +15,4 @@ resource "google_kms_crypto_key" "secp256k1" {
     protection_level = "HSM"
   }
 }
+*/
